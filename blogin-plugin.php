@@ -131,14 +131,25 @@ class BlestaApi {
     }
 }
 
+function encrypt_blesta_integration_key($key) {
+    $encryption_key = wp_salt('auth');
+    return base64_encode(openssl_encrypt($key, 'aes-256-cbc', $encryption_key, 0, substr($encryption_key, 0, 16)));
+}
+
+function decrypt_blesta_integration_key($encrypted_key) {
+    $encryption_key = wp_salt('auth');
+    return openssl_decrypt(base64_decode($encrypted_key), 'aes-256-cbc', $encryption_key, 0, substr($encryption_key, 0, 16));
+}
+
 class BlestaApiHandler {
     private $api;
 
     public function __construct() {
+        $bacdc = decrypt_blesta_integration_key(get_option('blesta_api_key', ''));
         $this->api = new BlestaApi([
             'url' => get_option('blesta_api_url', ''),
             'user' => get_option('blesta_api_user', ''),
-            'key' => get_option('blesta_api_key', ''),
+            'key' => $bacdc,
             'ssl_verify' => get_option('blesta_api_ssl_verify', true),
             'debug' => get_option('blesta_api_debug', false)
         ]);
@@ -166,16 +177,6 @@ class BlestaApiHandler {
             return new WP_Error('blesta_api_error', __('Blesta API error: ' . $e->getMessage(), 'blesta-login-integration'));
         }
     }
-}
-
-function encrypt_blesta_integration_key($key) {
-    $encryption_key = wp_salt('auth');
-    return base64_encode(openssl_encrypt($key, 'aes-256-cbc', $encryption_key, 0, substr($encryption_key, 0, 16)));
-}
-
-function decrypt_blesta_integration_key($encrypted_key) {
-    $encryption_key = wp_salt('auth');
-    return openssl_decrypt(base64_decode($encrypted_key), 'aes-256-cbc', $encryption_key, 0, substr($encryption_key, 0, 16));
 }
 
 add_action('admin_menu', 'blesta_api_config_menu');
