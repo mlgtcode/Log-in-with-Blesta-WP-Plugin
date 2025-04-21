@@ -238,16 +238,6 @@ add_action('admin_init', function () {
     ]);
 });
 
-add_action('admin_menu', function () {
-    add_options_page(
-        __('Blesta API Configuration', 'blesta-login-integration'),
-        __('Blesta API Configuration', 'blesta-login-integration'),
-        'manage_options',
-        'blesta-api-config',
-        'blesta_api_config_page'
-    );
-});
-
 function blesta_api_config_page() {
     if (!current_user_can('manage_options')) {
         wp_die(__('You do not have sufficient permissions to access this page.', 'blesta-login-integration'));
