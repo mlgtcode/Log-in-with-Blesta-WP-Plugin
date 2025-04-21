@@ -2,6 +2,7 @@
 
 ## Description
 The Blesta Login Integration plugin allows users to log in to WordPress using their Blesta username and password. This plugin integrates seamlessly with the Blesta API to authenticate users and provides additional options for user creation and CAPTCHA verification.
+![Screenshot Settings](Screenshot_de.png)
 
 ## Features
 - Authenticate WordPress users using Blesta credentials.
