@@ -1,0 +1,110 @@
+msgid "Blesta API Configuration"
+msgstr "Blesta API-Konfiguration"
+
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Sie haben nicht die erforderlichen Berechtigungen, um auf diese Seite zuzugreifen."
+
+msgid "Blesta API URL"
+msgstr "Blesta API-URL"
+
+msgid "Blesta API User"
+msgstr "Blesta API-Benutzer"
+
+msgid "Blesta API Key"
+msgstr "Blesta API-Schlüssel"
+
+msgid "SSL Verification"
+msgstr "SSL-Überprüfung"
+
+msgid "Debug Mode"
+msgstr "Debug-Modus"
+
+msgid "Enable User Creation"
+msgstr "Benutzererstellung aktivieren"
+
+msgid "Turnstile Site Key"
+msgstr "Turnstile-Site-Schlüssel"
+
+msgid "Turnstile Secret Key"
+msgstr "Turnstile-Geheimschlüssel"
+
+msgid "Enable Turnstile CAPTCHA"
+msgstr "Turnstile-CAPTCHA aktivieren"
+
+msgid "Login with Billing Credentials"
+msgstr "Mit Abrechnungsdaten anmelden"
+
+msgid "Username"
+msgstr "Benutzername"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Login"
+msgstr "Anmelden"
+
+msgid "Logout"
+msgstr "Abmelden"
+
+msgid "CAPTCHA verification failed. Please try again."
+msgstr "CAPTCHA-Überprüfung fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+msgid "The username or password you entered is incorrect. Please try again."
+msgstr "Der eingegebene Benutzername oder das Passwort ist falsch. Bitte versuchen Sie es erneut."
+
+msgid "New User Email Required"
+msgstr "Neue Benutzer-E-Mail erforderlich"
+
+msgid "Please provide an email address for the new user:"
+msgstr "Bitte geben Sie eine E-Mail-Adresse für den neuen Benutzer an:"
+
+msgid "Submit"
+msgstr "Einreichen"
+
+msgid "Invalid email address provided."
+msgstr "Ungültige E-Mail-Adresse angegeben."
+
+msgid "Try Again"
+msgstr "Erneut versuchen"
+
+msgid "You are already logged in."
+msgstr "Sie sind bereits eingeloggt."
+
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+msgid "Configure the general settings for the Blesta API integration, including API credentials and user creation options."
+msgstr "Konfigurieren Sie die allgemeinen Einstellungen für die Blesta-API-Integration, einschließlich API-Anmeldeinformationen und Benutzererstellungsoptionen."
+
+msgid "Configure the CAPTCHA settings to enhance security during login attempts."
+msgstr "Konfigurieren Sie die CAPTCHA-Einstellungen, um die Sicherheit bei Anmeldeversuchen zu erhöhen."
+
+msgid "Enter the base URL of your Blesta API endpoint (e.g., https://yourdomain.com/api/)."
+msgstr "Geben Sie die Basis-URL Ihres Blesta-API-Endpunkts ein (z. B. https://yourdomain.com/api/)."
+
+msgid "Provide the username for accessing the Blesta API."
+msgstr "Geben Sie den Benutzernamen für den Zugriff auf die Blesta-API an."
+
+msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
+msgstr "Geben Sie den API-Schlüssel ein, der mit dem Blesta-API-Benutzer verknüpft ist. Dieser Schlüssel wird aus Sicherheitsgründen verschlüsselt."
+
+msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
+msgstr "Aktivieren Sie diese Option, um SSL-Zertifikate bei der Verbindung mit der Blesta-API zu überprüfen."
+
+msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
+msgstr "Aktivieren Sie den Debug-Modus, um API-Anfragen und -Antworten zu Protokollierungszwecken aufzuzeichnen."
+
+msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
+msgstr "Ermöglichen Sie die automatische Erstellung von WordPress-Konten für Benutzer, die sich erfolgreich über die Blesta-API authentifizieren."
+
+msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verification."
+msgstr "Geben Sie den von Cloudflare Turnstile bereitgestellten Site-Schlüssel für die CAPTCHA-Überprüfung ein."
+
+msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
+msgstr "Geben Sie den von Cloudflare Turnstile bereitgestellten geheimen Schlüssel für die CAPTCHA-Überprüfung ein. Dieser Schlüssel wird aus Sicherheitsgründen verschlüsselt."
+
+msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
+msgstr "Aktivieren Sie diese Option, um der Anmeldemaske eine CAPTCHA-Überprüfung hinzuzufügen und die Sicherheit gegen automatisierte Anmeldeversuche zu erhöhen."

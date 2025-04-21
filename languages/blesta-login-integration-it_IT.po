@@ -1,0 +1,110 @@
+msgid "Blesta API Configuration"
+msgstr "Configurazione API Blesta"
+
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Non hai i permessi necessari per accedere a questa pagina."
+
+msgid "Blesta API URL"
+msgstr "URL API Blesta"
+
+msgid "Blesta API User"
+msgstr "Utente API Blesta"
+
+msgid "Blesta API Key"
+msgstr "Chiave API Blesta"
+
+msgid "SSL Verification"
+msgstr "Verifica SSL"
+
+msgid "Debug Mode"
+msgstr "Modalità Debug"
+
+msgid "Enable User Creation"
+msgstr "Abilita creazione utente"
+
+msgid "Turnstile Site Key"
+msgstr "Chiave sito Turnstile"
+
+msgid "Turnstile Secret Key"
+msgstr "Chiave segreta Turnstile"
+
+msgid "Enable Turnstile CAPTCHA"
+msgstr "Abilita CAPTCHA Turnstile"
+
+msgid "Login with Billing Credentials"
+msgstr "Accedi con credenziali di fatturazione"
+
+msgid "Username"
+msgstr "Nome utente"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Login"
+msgstr "Accedi"
+
+msgid "Logout"
+msgstr "Disconnetti"
+
+msgid "CAPTCHA verification failed. Please try again."
+msgstr "Verifica CAPTCHA fallita. Per favore riprova."
+
+msgid "The username or password you entered is incorrect. Please try again."
+msgstr "Il nome utente o la password inseriti non sono corretti. Per favore riprova."
+
+msgid "New User Email Required"
+msgstr "Email nuovo utente richiesta"
+
+msgid "Please provide an email address for the new user:"
+msgstr "Per favore fornisci un indirizzo email per il nuovo utente:"
+
+msgid "Submit"
+msgstr "Invia"
+
+msgid "Invalid email address provided."
+msgstr "Indirizzo email fornito non valido."
+
+msgid "Try Again"
+msgstr "Riprova"
+
+msgid "You are already logged in."
+msgstr "Sei già connesso."
+
+msgid "Save Changes"
+msgstr "Salva modifiche"
+
+msgid "Configure the general settings for the Blesta API integration, including API credentials and user creation options."
+msgstr "Configura le impostazioni generali per l'integrazione dell'API Blesta, incluse le credenziali API e le opzioni di creazione utente."
+
+msgid "Configure the CAPTCHA settings to enhance security during login attempts."
+msgstr "Configura le impostazioni CAPTCHA per migliorare la sicurezza durante i tentativi di accesso."
+
+msgid "Enter the base URL of your Blesta API endpoint (e.g., https://yourdomain.com/api/)."
+msgstr "Inserisci l'URL di base del tuo endpoint API Blesta (es., https://yourdomain.com/api/)."
+
+msgid "Provide the username for accessing the Blesta API."
+msgstr "Fornisci il nome utente per accedere all'API Blesta."
+
+msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
+msgstr "Inserisci la chiave API associata all'utente API Blesta. Questa chiave sarà crittografata per sicurezza."
+
+msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
+msgstr "Abilita questa opzione per verificare i certificati SSL durante la connessione all'API Blesta."
+
+msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
+msgstr "Abilita la modalità debug per registrare le richieste e le risposte API a scopo di risoluzione dei problemi."
+
+msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
+msgstr "Consenti la creazione automatica di account WordPress per gli utenti che si autenticano con successo tramite l'API Blesta."
+
+msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verification."
+msgstr "Inserisci la chiave del sito fornita da Cloudflare Turnstile per la verifica CAPTCHA."
+
+msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
+msgstr "Inserisci la chiave segreta fornita da Cloudflare Turnstile per la verifica CAPTCHA. Questa chiave sarà crittografata per sicurezza."
+
+msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
+msgstr "Abilita questa opzione per aggiungere la verifica CAPTCHA al modulo di accesso, migliorando la sicurezza contro i tentativi di accesso automatizzati."

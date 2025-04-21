@@ -1,0 +1,110 @@
+msgid "Blesta API Configuration"
+msgstr "Blesta API 配置"
+
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您没有足够的权限访问此页面。"
+
+msgid "Blesta API URL"
+msgstr "Blesta API URL"
+
+msgid "Blesta API User"
+msgstr "Blesta API 用户"
+
+msgid "Blesta API Key"
+msgstr "Blesta API 密钥"
+
+msgid "SSL Verification"
+msgstr "SSL 验证"
+
+msgid "Debug Mode"
+msgstr "调试模式"
+
+msgid "Enable User Creation"
+msgstr "启用用户创建"
+
+msgid "Turnstile Site Key"
+msgstr "Turnstile 站点密钥"
+
+msgid "Turnstile Secret Key"
+msgstr "Turnstile 密钥"
+
+msgid "Enable Turnstile CAPTCHA"
+msgstr "启用 Turnstile CAPTCHA"
+
+msgid "Login with Billing Credentials"
+msgstr "使用账单凭据登录"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "CAPTCHA verification failed. Please try again."
+msgstr "CAPTCHA 验证失败。请再试一次。"
+
+msgid "The username or password you entered is incorrect. Please try again."
+msgstr "您输入的用户名或密码不正确。请再试一次。"
+
+msgid "New User Email Required"
+msgstr "需要新用户的电子邮件"
+
+msgid "Please provide an email address for the new user:"
+msgstr "请为新用户提供一个电子邮件地址："
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Invalid email address provided."
+msgstr "提供的电子邮件地址无效。"
+
+msgid "Try Again"
+msgstr "再试一次"
+
+msgid "You are already logged in."
+msgstr "您已登录。"
+
+msgid "Save Changes"
+msgstr "保存更改"
+
+msgid "Configure the general settings for the Blesta API integration, including API credentials and user creation options."
+msgstr "配置 Blesta API 集成的一般设置，包括 API 凭据和用户创建选项。"
+
+msgid "Configure the CAPTCHA settings to enhance security during login attempts."
+msgstr "配置 CAPTCHA 设置以增强登录尝试期间的安全性。"
+
+msgid "Enter the base URL of your Blesta API endpoint (e.g., https://yourdomain.com/api/)."
+msgstr "输入您的 Blesta API 端点的基本 URL（例如，https://yourdomain.com/api/）。"
+
+msgid "Provide the username for accessing the Blesta API."
+msgstr "提供访问 Blesta API 的用户名。"
+
+msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
+msgstr "输入与 Blesta API 用户关联的 API 密钥。此密钥将被加密以确保安全。"
+
+msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
+msgstr "启用此选项以在连接到 Blesta API 时验证 SSL 证书。"
+
+msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
+msgstr "启用调试模式以记录 API 请求和响应以进行故障排除。"
+
+msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
+msgstr "允许为通过 Blesta API 成功认证的用户自动创建 WordPress 帐户。"
+
+msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verification."
+msgstr "输入 Cloudflare Turnstile 提供的站点密钥以进行 CAPTCHA 验证。"
+
+msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
+msgstr "输入 Cloudflare Turnstile 提供的密钥以进行 CAPTCHA 验证。此密钥将被加密以确保安全。"
+
+msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
+msgstr "启用此选项以在登录表单中添加 CAPTCHA 验证，从而增强对自动登录尝试的安全性。"
