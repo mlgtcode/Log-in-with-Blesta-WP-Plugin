@@ -1,3 +1,8 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 msgid "Blesta API Configuration"
 msgstr "Blesta API-Konfiguration"
 
@@ -89,13 +94,13 @@ msgid "Provide the username for accessing the Blesta API."
 msgstr "Geben Sie den Benutzernamen für den Zugriff auf die Blesta-API an."
 
 msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
-msgstr "Geben Sie den API-Schlüssel ein, der mit dem Blesta-API-Benutzer verknüpft ist. Dieser Schlüssel wird aus Sicherheitsgründen verschlüsselt."
+msgstr "Geben Sie den API-Schlüssel ein, der mit dem Blesta-API-Benutzer verknüpft ist."
 
 msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
 msgstr "Aktivieren Sie diese Option, um SSL-Zertifikate bei der Verbindung mit der Blesta-API zu überprüfen."
 
-msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
-msgstr "Aktivieren Sie den Debug-Modus, um API-Anfragen und -Antworten zu Protokollierungszwecken aufzuzeichnen."
+msgid "Enable debug mode to for troubleshooting purposes."
+msgstr "Aktivieren Sie den Debug-Modus zu Fehlerbehebungszwecken."
 
 msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
 msgstr "Ermöglichen Sie die automatische Erstellung von WordPress-Konten für Benutzer, die sich erfolgreich über die Blesta-API authentifizieren."
@@ -104,7 +109,19 @@ msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verificat
 msgstr "Geben Sie den von Cloudflare Turnstile bereitgestellten Site-Schlüssel für die CAPTCHA-Überprüfung ein."
 
 msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
-msgstr "Geben Sie den von Cloudflare Turnstile bereitgestellten geheimen Schlüssel für die CAPTCHA-Überprüfung ein. Dieser Schlüssel wird aus Sicherheitsgründen verschlüsselt."
+msgstr "Geben Sie den von Cloudflare Turnstile bereitgestellten geheimen Schlüssel für die CAPTCHA-Überprüfung ein."
 
 msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
 msgstr "Aktivieren Sie diese Option, um der Anmeldemaske eine CAPTCHA-Überprüfung hinzuzufügen und die Sicherheit gegen automatisierte Anmeldeversuche zu erhöhen."
+
+msgid "Shortcode Usage"
+msgstr "Shortcode-Nutzung"
+
+msgid "You can use the following shortcode to display the login form on any page or post:"
+msgstr "Sie können den folgenden Shortcode verwenden, um das Anmeldeformular auf einer beliebigen Seite oder einem Beitrag anzuzeigen:"
+
+msgid "Simply copy and paste the shortcode into the content editor where you want the login form to appear."
+msgstr "Kopieren Sie einfach den Shortcode und fügen Sie ihn in den Inhaltseditor ein, an der Stelle, an der das Anmeldeformular angezeigt werden soll."
+
+msgid "If CAPTCHA is enabled, it will automatically be included in the form."
+msgstr "Wenn CAPTCHA aktiviert ist, wird es automatisch im Formular enthalten sein."

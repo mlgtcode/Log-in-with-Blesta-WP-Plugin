@@ -3,7 +3,7 @@
 Plugin Name: Blesta Login Integration
 Plugin URI: https://mlgt.info/
 Description: Allow users to log in to WordPress using their Blesta username and password.
-Version: 1.0
+Version: 1.1
 Author: MLGT
 Author URI: https://mlgt.info/
 */
@@ -285,13 +285,13 @@ function blesta_api_config_page() {
     echo '<p class="description">' . __('Provide the username for accessing the Blesta API.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_api_key">' . __('Blesta API Key', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_api_key" type="password" id="blesta_api_key" value="' . esc_attr($blesta_api_key) . '" class="regular-text">';
-    echo '<p class="description">' . __('Enter the API key associated with the Blesta API user. This key will be encrypted for security.', 'blesta-login-integration') . '</p></td></tr>';
+    echo '<p class="description">' . __('Enter the API key associated with the Blesta API user.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_api_ssl_verify">' . __('SSL Verification', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_api_ssl_verify" type="checkbox" id="blesta_api_ssl_verify" ' . checked($blesta_api_ssl_verify, true, false) . '>'; 
     echo '<p class="description">' . __('Enable this option to verify SSL certificates when connecting to the Blesta API.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_api_debug">' . __('Debug Mode', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_api_debug" type="checkbox" id="blesta_api_debug" ' . checked($blesta_api_debug, true, false) . '>'; 
-    echo '<p class="description">' . __('Enable debug mode to log API requests and responses for troubleshooting purposes.', 'blesta-login-integration') . '</p></td></tr>';
+    echo '<p class="description">' . __('Enable debug mode to for troubleshooting purposes.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_enable_user_creation">' . __('Enable User Creation', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_enable_user_creation" type="checkbox" id="blesta_enable_user_creation" ' . checked($blesta_enable_user_creation, true, false) . '>'; 
     echo '<p class="description">' . __('Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API.', 'blesta-login-integration') . '</p></td></tr>';
@@ -305,7 +305,7 @@ function blesta_api_config_page() {
     echo '<p class="description">' . __('Enter the site key provided by Cloudflare Turnstile for CAPTCHA verification.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_turnstile_secret_key">' . __('Turnstile Secret Key', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_turnstile_secret_key" type="password" id="blesta_turnstile_secret_key" value="' . esc_attr($blesta_turnstile_secret_key) . '" class="regular-text">';
-    echo '<p class="description">' . __('Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security.', 'blesta-login-integration') . '</p></td></tr>';
+    echo '<p class="description">' . __('Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification.', 'blesta-login-integration') . '</p></td></tr>';
     echo '<tr><th scope="row"><label for="blesta_enable_turnstile">' . __('Enable Turnstile CAPTCHA', 'blesta-login-integration') . '</label></th>';
     echo '<td><input name="blesta_enable_turnstile" type="checkbox" id="blesta_enable_turnstile" ' . checked($blesta_enable_turnstile, true, false) . '>'; 
     echo '<p class="description">' . __('Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts.', 'blesta-login-integration') . '</p></td></tr>';
@@ -313,6 +313,13 @@ function blesta_api_config_page() {
 
     echo '<p class="submit"><input type="submit" class="button-primary" value="' . __('Save Changes', 'blesta-login-integration') . '"></p>';
     echo '</form>';
+
+    echo '<h1>' . __('Shortcode Usage', 'blesta-login-integration') . '</h1>';
+    echo '<p>' . __('You can use the following shortcode to display the login form on any page or post:', 'blesta-login-integration') . '</p>';
+    echo '<p><code>[blesta_login_form]</code></p>';
+    echo '<p>' . __('Simply copy and paste the shortcode into the content editor where you want the login form to appear.', 'blesta-login-integration') . '</p>';
+    echo '<p>' . __('If CAPTCHA is enabled, it will automatically be included in the form.', 'blesta-login-integration') . '</p>';
+
     echo '</div>';
 }
 
@@ -374,9 +381,9 @@ function blesta_login_form_shortcode() {
                     echo '<h1>' . __('Login with Billing Credentials', 'blesta-login-integration') . '</h1>';
                 }
                 echo '<form method="post" class="blogin">';
-                echo '<p><label for="billing_username">' . __('Username', 'blesta-login-integration') . '</label><br>'; 
+                echo '<p><label for="billing_username">' . __('Username', 'default') . '</label><br>'; 
                 echo '<input type="text" name="billing_username" id="billing_username" class="input" required></p>';
-                echo '<p><label for="billing_password">' . __('Password', 'blesta-login-integration') . '</label><br>'; 
+                echo '<p><label for="billing_password">' . __('Password', 'default') . '</label><br>'; 
                 echo '<input type="password" name="billing_password" id="billing_password" class="input" required></p>';
 
                 if ($blesta_enable_turnstile && $blesta_turnstile_site_key) {
@@ -384,7 +391,7 @@ function blesta_login_form_shortcode() {
                     echo '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>';
                 }
 
-                echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'blesta-login-integration') . '</button></p>';
+                echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'default') . '</button></p>';
                 echo '</form>';
                 echo '</div>';
 
@@ -409,9 +416,9 @@ function blesta_login_form_shortcode() {
                 echo '<h1>' . __('Login with Billing Credentials', 'blesta-login-integration') . '</h1>';
             }
             echo '<form method="post" class="blogin">';
-            echo '<p><label for="billing_username">' . __('Username', 'blesta-login-integration') . '</label><br>'; 
+            echo '<p><label for="billing_username">' . __('Username', 'default') . '</label><br>'; 
             echo '<input type="text" name="billing_username" id="billing_username" class="input" required></p>';
-            echo '<p><label for="billing_password">' . __('Password', 'blesta-login-integration') . '</label><br>'; 
+            echo '<p><label for="billing_password">' . __('Password', 'default') . '</label><br>'; 
             echo '<input type="password" name="billing_password" id="billing_password" class="input" required></p>';
 
             if ($blesta_enable_turnstile && $blesta_turnstile_site_key) {
@@ -419,7 +426,7 @@ function blesta_login_form_shortcode() {
                 echo '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>';
             }
 
-            echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'blesta-login-integration') . '</button></p>';
+            echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'default') . '</button></p>';
             echo '</form>';
             echo '</div>';
 
@@ -468,9 +475,9 @@ function blesta_login_form_shortcode() {
     echo '<div class="login blogin">';
     echo '<form method="post" class="blogin">';
 
-    echo '<p><label for="billing_username">' . __('Username', 'blesta-login-integration') . '</label><br>'; 
+    echo '<p><label for="billing_username">' . __('Username', 'default') . '</label><br>'; 
     echo '<input type="text" name="billing_username" id="billing_username" class="input" required></p>';
-    echo '<p><label for="billing_password">' . __('Password', 'blesta-login-integration') . '</label><br>'; 
+    echo '<p><label for="billing_password">' . __('Password', 'default') . '</label><br>'; 
     echo '<input type="password" name="billing_password" id="billing_password" class="input" required></p>';
 
     if ($blesta_enable_turnstile && $blesta_turnstile_site_key) {
@@ -478,7 +485,7 @@ function blesta_login_form_shortcode() {
         echo '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>';
     }
 
-    echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'blesta-login-integration') . '</button></p>';
+    echo '<p><button type="submit" class="button button-primary button-large">' . __('Login', 'default') . '</button></p>';
     echo '</form>';
     echo '</div>';
     return ob_get_clean();

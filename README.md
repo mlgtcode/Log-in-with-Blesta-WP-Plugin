@@ -2,7 +2,7 @@
 
 ## Description
 The Blesta Login Integration plugin allows users to log in to WordPress using their Blesta username and password. This plugin integrates seamlessly with the Blesta API to authenticate users and provides additional options for user creation and CAPTCHA verification.
-![Screenshot Settings](Screenshot_de.png)
+![Screenshot Settings](Screenshot.png)
 
 ## Features
 - Authenticate WordPress users using Blesta credentials.
@@ -26,13 +26,7 @@ The Blesta Login Integration plugin allows users to log in to WordPress using th
 **Important:** Ensure that your Blesta API endpoint is secured with a Web Application Firewall (WAF) or similar security measures. The plugin relies on the security of the API endpoint to protect user credentials and sensitive data.
 
 ## Translation
-The plugin supports multiple languages:
-- German (`de_DE`)
-- Italian (`it_IT`)
-- Chinese (`zh_CN`)
-
-To add more translations, create a `.po` file in the `languages` directory and follow the existing format.
-
+The plugin supports multiple languages. To add more translations, create a `.po` file in the `languages` directory and compile the translation files.
 
 ## Contributing
 Contributions are welcome! Feel free to submit issues or pull requests to improve the plugin.

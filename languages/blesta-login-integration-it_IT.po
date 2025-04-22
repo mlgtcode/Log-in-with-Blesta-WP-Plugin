@@ -1,3 +1,8 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 msgid "Blesta API Configuration"
 msgstr "Configurazione API Blesta"
 
@@ -89,13 +94,13 @@ msgid "Provide the username for accessing the Blesta API."
 msgstr "Fornisci il nome utente per accedere all'API Blesta."
 
 msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
-msgstr "Inserisci la chiave API associata all'utente API Blesta. Questa chiave sarà crittografata per sicurezza."
+msgstr "Inserisci la chiave API associata all'utente API Blesta."
 
 msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
 msgstr "Abilita questa opzione per verificare i certificati SSL durante la connessione all'API Blesta."
 
-msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
-msgstr "Abilita la modalità debug per registrare le richieste e le risposte API a scopo di risoluzione dei problemi."
+msgid "Enable debug mode to for troubleshooting purposes."
+msgstr "Abilita la modalità debug per scopi di risoluzione dei problemi."
 
 msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
 msgstr "Consenti la creazione automatica di account WordPress per gli utenti che si autenticano con successo tramite l'API Blesta."
@@ -104,7 +109,16 @@ msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verificat
 msgstr "Inserisci la chiave del sito fornita da Cloudflare Turnstile per la verifica CAPTCHA."
 
 msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
-msgstr "Inserisci la chiave segreta fornita da Cloudflare Turnstile per la verifica CAPTCHA. Questa chiave sarà crittografata per sicurezza."
+msgstr "Inserisci la chiave segreta fornita da Cloudflare Turnstile per la verifica CAPTCHA."
 
-msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
-msgstr "Abilita questa opzione per aggiungere la verifica CAPTCHA al modulo di accesso, migliorando la sicurezza contro i tentativi di accesso automatizzati."
+msgid "Shortcode Usage"
+msgstr "Utilizzo dello Shortcode"
+
+msgid "You can use the following shortcode to display the login form on any page or post:"
+msgstr "Puoi utilizzare il seguente shortcode per visualizzare il modulo di accesso su qualsiasi pagina o post:"
+
+msgid "Simply copy and paste the shortcode into the content editor where you want the login form to appear."
+msgstr "Copia e incolla semplicemente lo shortcode nell'editor di contenuti dove desideri che appaia il modulo di accesso."
+
+msgid "If CAPTCHA is enabled, it will automatically be included in the form."
+msgstr "Se il CAPTCHA è abilitato, verrà automaticamente incluso nel modulo."

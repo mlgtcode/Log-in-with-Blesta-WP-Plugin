@@ -1,3 +1,8 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 msgid "Blesta API Configuration"
 msgstr "Blesta API 配置"
 
@@ -89,13 +94,13 @@ msgid "Provide the username for accessing the Blesta API."
 msgstr "提供访问 Blesta API 的用户名。"
 
 msgid "Enter the API key associated with the Blesta API user. This key will be encrypted for security."
-msgstr "输入与 Blesta API 用户关联的 API 密钥。此密钥将被加密以确保安全。"
+msgstr "输入与 Blesta API 用户关联的 API 密钥。"
 
 msgid "Enable this option to verify SSL certificates when connecting to the Blesta API."
 msgstr "启用此选项以在连接到 Blesta API 时验证 SSL 证书。"
 
-msgid "Enable debug mode to log API requests and responses for troubleshooting purposes."
-msgstr "启用调试模式以记录 API 请求和响应以进行故障排除。"
+msgid "Enable debug mode to for troubleshooting purposes."
+msgstr "启用调试模式以便故障排除。"
 
 msgid "Allow automatic creation of WordPress accounts for users who authenticate successfully via the Blesta API."
 msgstr "允许为通过 Blesta API 成功认证的用户自动创建 WordPress 帐户。"
@@ -104,7 +109,16 @@ msgid "Enter the site key provided by Cloudflare Turnstile for CAPTCHA verificat
 msgstr "输入 Cloudflare Turnstile 提供的站点密钥以进行 CAPTCHA 验证。"
 
 msgid "Enter the secret key provided by Cloudflare Turnstile for CAPTCHA verification. This key will be encrypted for security."
-msgstr "输入 Cloudflare Turnstile 提供的密钥以进行 CAPTCHA 验证。此密钥将被加密以确保安全。"
+msgstr "输入 Cloudflare Turnstile 提供的密钥以进行 CAPTCHA 验证。"
 
-msgid "Enable this option to add CAPTCHA verification to the login form, enhancing security against automated login attempts."
-msgstr "启用此选项以在登录表单中添加 CAPTCHA 验证，从而增强对自动登录尝试的安全性。"
+msgid "Shortcode Usage"
+msgstr "短代码使用"
+
+msgid "You can use the following shortcode to display the login form on any page or post:"
+msgstr "您可以使用以下短代码在任何页面或帖子上显示登录表单："
+
+msgid "Simply copy and paste the shortcode into the content editor where you want the login form to appear."
+msgstr "只需复制并粘贴短代码到内容编辑器中您希望显示登录表单的位置。"
+
+msgid "If CAPTCHA is enabled, it will automatically be included in the form."
+msgstr "如果启用了 CAPTCHA，它将自动包含在表单中。"
